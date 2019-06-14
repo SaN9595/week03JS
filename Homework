@@ -1,7 +1,12 @@
+//Number 1 STRINGS 
+
 let myString = "hello,this,is,a,difficult,to,read,sentence";
 console.log(myString.length);
 let NewString=myString.replace(/,/g," ");
 console.log(NewString);
+
+//Number 2 ARRAYS
+//2.3 Jim's favorite animal was added with arr.splice(index, 0, item);
 
 let favoriteAnimals = ["blowfish", "capricorn", "giraffe"];
 
@@ -12,10 +17,14 @@ let favoriteAnimals = ["blowfish", "capricorn", "giraffe"];
 
   console.log('The array has a length of: ' + favoriteAnimals.length);
 
+//2.7 Jason don't like giraffe so animal was deleted from array
+
   favoriteAnimals.splice( favoriteAnimals.indexOf('giraffe'), 1 );
   console.log(favoriteAnimals);
 
   console.log('The item you are looking for is at index: ' + favoriteAnimals.indexOf('meerkat'));
+
+//Create a function that takes 3 arguments and returns the sum of the these arguments.
 
   function sum(number1,number2,number3)
   {
@@ -23,12 +32,15 @@ let favoriteAnimals = ["blowfish", "capricorn", "giraffe"];
   }
 console.log(sum(55,21,36));
 
+//Create a function named colorCar that receives a color, and prints out, 'a red car' for example.
+
 function colorCar(color)
 {
     return "a "+color+" car";
 }
 console.log(colorCar("ta7seeeen"));
 
+//Create an object and a function that takes the object as a parameter and prints out all of its properties and values.
 
 let object={name:"ta7seeen",address:"a7seen street - 17"};
 
@@ -40,6 +52,8 @@ function print(object)
 }
 print(object);
 
+//Create a function named vehicleType that receives a color, and a code, 
+//1 for car, 2 for motorbike. And prints 'a blue motorbike' for example when called as vehicleType("blue", 2)
 
 function vehicleType(color,type)
 {
